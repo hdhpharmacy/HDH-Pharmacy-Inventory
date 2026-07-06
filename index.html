@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HDH Pharmacy Inventory Pro</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f7fb;
+}
+
+header{
+background:#0d47a1;
+color:white;
+padding:18px;
+font-size:24px;
+font-weight:bold;
+text-align:center;
+}
+
+.container{
+padding:15px;
+}
+
+.card{
+background:white;
+border-radius:12px;
+padding:15px;
+margin-bottom:15px;
+box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+h2{
+margin-bottom:12px;
+color:#0d47a1;
+}
+
+input,select{
+width:100%;
+padding:12px;
+margin-top:8px;
+border:1px solid #ddd;
+border-radius:8px;
+font-size:16px;
+}
+
+button{
+width:100%;
+margin-top:12px;
+padding:14px;
+background:#0d47a1;
+color:white;
+border:none;
+border-radius:10px;
+font-size:17px;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+background:#1565c0;
+}
+
+table{
+width:100%;
+margin-top:15px;
+border-collapse:collapse;
+}
+
+th{
+background:#0d47a1;
+color:white;
+padding:10px;
+}
+
+td{
+padding:10px;
+border-bottom:1px solid #eee;
+text-align:center;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+HDH Pharmacy Inventory Pro
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Add Medicine</h2>
+
+<input type="text" placeholder="Medicine Name">
+
+<input type="text" placeholder="Company">
+
+<input type="number" placeholder="Selling Price">
+
+<input type="number" placeholder="Box Stock">
+
+<select>
+<option>7 Tablets / Strip</option>
+<option>10 Tablets / Strip</option>
+<option>14 Tablets / Strip</option>
+<option>15 Tablets / Strip</option>
+<option>20 Tablets / Strip</option>
+<option>Custom</option>
+</select>
+
+<button>Add Medicine</button>
+
+</div>
+
+<div class="card">
+
+<h2>Search Medicine</h2>
+
+<input type="text" placeholder="Search...">
+
+</div>
+
+<div class="card">
+
+<h2>Inventory</h2>
+
+<table>
+
+<tr>
+<th>Medicine</th>
+<th>Company</th>
+<th>Stock</th>
+</tr>
+
+<tr>
+<td>Napa</td>
+<td>Beximco</td>
+<td>50 Box</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
